@@ -95,7 +95,19 @@ body{
 /*        SOL          */
 /* ******************* */
 
+.astresContainer{
+	position: absolute;
+	z-index: 1;
+	left: 25%;
+	top: 20%;
 
+	width: 50%;
+	height: 90%;
+
+	border-radius: 50%;
+	transform: rotate(-45deg);
+	animation: 24s girar infinite linear;
+}
 
 #sun {
 	width: var(--midaSol);
@@ -103,44 +115,30 @@ body{
 	position: absolute;
 	border-radius: 50%;
 	z-index: 1;
-	left: 15%;
-	top: calc(50% + var(--midaSol));
-
-	animation: 20s movimentSol linear infinite;
+	margin-left: 120px 0;
+	/* background-color: red; */
+	animation: colorSol 24s linear infinite;
 }
 
-@keyframes movimentSol{
-	0%{
-		top: 50%;
-		background-color: var(--taronja);
-	}
-	20%{
-		left: 35%;
-		top: 15%;
-		background-color: var(--taronja);
-	}
-	40%{
-		left: calc(50% - var(--midaSol));
-		top: 5%;
-		background-color: var(--groc);
-	}
-	60%{
-		left: 65%;
-		top: 20%;
-		background-color: var(--groc);
-	}
-	80%{
-		left: 71%;
-		top: 30%;
-		background-color: var(--vermell);
+@keyframes girar {
+    0%{
+		transform: rotate(-45deg)
 	}
 	100%{
-		left: 85%;
-		top: 50%;
-		background-color: var(--vermell);
+		transform: rotate(315deg)
 	}
 }
-
+@keyframes colorSol{
+	0%{
+		background-color: orange;
+	}
+	25%{
+		background-color: yellow;
+	}
+	50%{
+		background-color: lightcoral;
+	}
+}
 /* ******************* */
 /*       LLUNA         */
 /* ******************* */
