@@ -2,7 +2,7 @@
 	--taronja: orange;
 	--groc	 : yellow;
 	--vermell: lightcoral;
-	--noche  : #3E5E6B;
+	--nit    : #3E5E6B;
 	
 	--midaSol: 130px;
 
@@ -95,7 +95,6 @@ body{
 	position: absolute;
 	top: 10px;
 }
-
 .cloud-2 {
 	left: 50px;
 	top: 0;
@@ -164,12 +163,15 @@ body{
 @keyframes colorSol{
 	0%{
 		background-color: var(--taronja);
+		box-shadow: 0 0 50px rgba(255, 165, 0);
 	}
 	25%{
 		background-color: var(--groc);
+		box-shadow: 0 0 40px rgb(255, 255, 0);
 	}
-	50%{
+	55%{
 		background-color: var(--vermell);
+		box-shadow: 0 0 30px rgb(240, 128, 128);
 	}
 }
 /* ******************* */
@@ -195,7 +197,7 @@ body{
 }
 
 .moon-2 {
-	background: var(--noche);
+	background: var(--nit);
 	position: absolute;
 	top: -20px;
 	left: 20px;
@@ -228,7 +230,7 @@ body{
 
 @keyframes colorCel{
 	0%{
-		background-color: #6398AD;
+		background-color: rgb(93, 143, 163);
 	}
 	25%{
 		background-color: #87ceeb;
@@ -237,7 +239,7 @@ body{
 		background-color: rgb(86, 132, 150);
 	}
 	70%{
-		background-color: var(--noche);
+		background-color: var(--nit);
 	}
 	100%{
 		background-color: #578699;
