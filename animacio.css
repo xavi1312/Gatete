@@ -27,7 +27,7 @@ body{
 /* ******************* */
 
 .foreground {
-	animation: parallax_fg linear 15s infinite both;
+	animation: parallax_fg linear 24s infinite both;
 	background: url(imatges/foreground_grass.png) 0 100% repeat-x;
 	z-index: 4;
 }
@@ -44,8 +44,12 @@ body{
 .midground {
   background:  url(imatges/midground_grass.png) 0 100% repeat-x;
   z-index: 3;
+  animation: moureHerba linear 24s infinite both;
 }
-
+@keyframes moureHerba{
+	0% { background-position: -3000px 100%;} 
+  100% {background-position: 0 100%; } 
+}
 /* ******************* */
 /*     MUNTANYES       */
 /* ******************* */
@@ -234,7 +238,7 @@ body{
 /* ******************* */
 
 .tuna {
-  animation: walk-cycle 1s steps(12) infinite;
+  animation: walk-cycle 1.2s steps(12) infinite;
   background: url(imatges/tuna_sprite.png) 0 0 no-repeat; 
   height: 200px;
   width: 400px;
