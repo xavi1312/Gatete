@@ -1,8 +1,9 @@
 :root{
 	--midaSol: 130px;
-	--taronja: rgb(252, 172, 25);
-	--groc: #ffd630;
-	--vermell: #F56A40;
+	--taronja: orange;
+	--groc: yellow;
+	--vermell: lightcoral;
+	--tempsAnimacions: 24s;
 }
 body{
 	overflow:hidden;
@@ -106,7 +107,7 @@ body{
 
 	border-radius: 50%;
 	transform: rotate(-45deg);
-	animation: 24s girar infinite linear;
+	animation: var(--tempsAnimacions) girar infinite linear;
 }
 
 #sun {
@@ -115,9 +116,7 @@ body{
 	position: absolute;
 	border-radius: 50%;
 	z-index: 1;
-	margin-left: 120px 0;
-	/* background-color: red; */
-	animation: colorSol 24s linear infinite;
+	animation: colorSol var(--tempsAnimacions) linear infinite;
 }
 
 @keyframes girar {
@@ -130,13 +129,13 @@ body{
 }
 @keyframes colorSol{
 	0%{
-		background-color: orange;
+		background-color: var(--taronja);
 	}
 	25%{
-		background-color: yellow;
+		background-color: var(--groc);
 	}
 	50%{
-		background-color: lightcoral;
+		background-color: var(--vermell);
 	}
 }
 /* ******************* */
@@ -172,9 +171,23 @@ body{
 
 .cel {
 	z-index: 0;
-	background-color: #525252;
+	animation: colorCel var(--tempsAnimacions) infinite linear;
 }
 
+@keyframes colorCel{
+	0%{
+		background-color: #6ca6bd;
+	}
+	25%{
+		background-color: #87ceeb;
+	}
+	50%{
+		background-color: rgb(86, 132, 150);
+	}
+	100%{
+		background-color: #3E5E6B;
+	}
+}
 /* ******************* */
 /*        Tigre        */
 /* ******************* */
