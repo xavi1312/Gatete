@@ -27,7 +27,7 @@ body{
 /* ******************* */
 
 .foreground {
-	animation: parallax_fg linear 24s infinite both;
+	animation: parallax_fg linear var(--tempsAnimacions) infinite both;
 	background: url(imatges/foreground_grass.png) 0 100% repeat-x;
 	z-index: 4;
 }
@@ -44,7 +44,7 @@ body{
 .midground {
   background:  url(imatges/midground_grass.png) 0 100% repeat-x;
   z-index: 3;
-  animation: moureHerba linear 24s infinite both;
+  animation: moureHerba linear var(--tempsAnimacions) infinite both;
 }
 @keyframes moureHerba{
 	0% { background-position: -3000px 100%;} 
@@ -64,8 +64,14 @@ body{
   background-repeat: repeat-x;
   background-position: 0 100%;
   z-index: 2;
+  animation: moureMuntanyes linear 30s infinite both;
+
 }
 
+@keyframes moureMuntanyes{
+	0%{background-position: -1800px 100%}
+	100%{background-position: 0 100%}
+}
 /* ******************* */
 /*       NUVOL         */
 /* ******************* */
@@ -110,11 +116,14 @@ body{
 	50%{
 		left: 50%;
 	}
-	100%{
-		opacity: 0;
-		
-		top: 150px;
+	90%{
 		left: 100%;
+		opacity: .4;
+	}
+	100%{		
+		opacity: 0;
+		top: 150px;
+		left: 110%;
 	}
 }
 /* ******************* */
@@ -238,7 +247,7 @@ body{
 /* ******************* */
 
 .tuna {
-  animation: walk-cycle 1.2s steps(12) infinite;
+  animation: walk-cycle 1.4s steps(12) infinite;
   background: url(imatges/tuna_sprite.png) 0 0 no-repeat; 
   height: 200px;
   width: 400px;
