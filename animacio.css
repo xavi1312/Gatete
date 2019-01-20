@@ -68,10 +68,11 @@ body{
 
 #cloud {
 	position: relative;
-	top: 20px;
-	left: -100px;
+	top: 70px;
+	left: -300px;
 	opacity: 0;
-	z-index: 2;
+	z-index: 4;
+	animation: moureNuvol var(--tempsAnimacions) linear infinite;
 }
 
 
@@ -95,6 +96,23 @@ body{
 	top: 20px;
 }
 
+@keyframes moureNuvol{
+	0%{
+		opacity: 1;
+	}
+	25%{
+		top: 100px;
+	}
+	50%{
+		left: 50%;
+	}
+	100%{
+		opacity: 0;
+		
+		top: 150px;
+		left: 100%;
+	}
+}
 /* ******************* */
 /*        SOL          */
 /* ******************* */
@@ -147,7 +165,7 @@ body{
 
 #moon {
 	position: relative;
-	top: 40px;
+	top: 50px;
 	left: 10%;
 	z-index:1;
 	opacity: 0;
