@@ -109,7 +109,7 @@ body{
 	height: 90%;
 
 	border-radius: 50%;
-	transform: rotate(-45deg);
+	transform: rotate(-50deg);
 	animation: var(--tempsAnimacions) girar infinite linear;
 }
 
@@ -124,10 +124,10 @@ body{
 
 @keyframes girar {
     0%{
-		transform: rotate(-45deg)
+		transform: rotate(-50deg)
 	}
 	100%{
-		transform: rotate(315deg)
+		transform: rotate(320deg)
 	}
 }
 @keyframes colorSol{
@@ -175,7 +175,7 @@ body{
 	45%{
 		opacity: 0;
 	}
-	50%{
+	53%{
 		opacity: .2;
 	}
 	70%{
@@ -196,7 +196,7 @@ body{
 
 @keyframes colorCel{
 	0%{
-		background-color: #6ca6bd;
+		background-color: #6398AD;
 	}
 	25%{
 		background-color: #87ceeb;
@@ -208,7 +208,7 @@ body{
 		background-color: var(--noche);
 	}
 	100%{
-		background-color: #6ca6bd;
+		background-color: #578699;
 	}
 }
 /* ******************* */
