@@ -1,3 +1,9 @@
+:root{
+	--midaSol: 130px;
+	--taronja: rgb(252, 172, 25);
+	--groc: #ffd630;
+	--vermell: #F56A40;
+}
 body{
 	overflow:hidden;
 }
@@ -89,17 +95,51 @@ body{
 /*        SOL          */
 /* ******************* */
 
+
+
 #sun {
-	background: #ffd630;
-	width: 130px;
-	height: 130px;
+	width: var(--midaSol);
+	height: var(--midaSol);
 	position: absolute;
-	border-radius: 70px;
+	border-radius: 50%;
 	z-index: 1;
-	bottom: 0;
-	left: 340px;
+	left: 15%;
+	top: calc(50% + var(--midaSol));
+
+	animation: 20s movimentSol linear infinite;
 }
 
+@keyframes movimentSol{
+	0%{
+		top: 50%;
+		background-color: var(--taronja);
+	}
+	20%{
+		left: 35%;
+		top: 15%;
+		background-color: var(--taronja);
+	}
+	40%{
+		left: calc(50% - var(--midaSol));
+		top: 5%;
+		background-color: var(--groc);
+	}
+	60%{
+		left: 65%;
+		top: 20%;
+		background-color: var(--groc);
+	}
+	80%{
+		left: 71%;
+		top: 30%;
+		background-color: var(--vermell);
+	}
+	100%{
+		left: 85%;
+		top: 50%;
+		background-color: var(--vermell);
+	}
+}
 
 /* ******************* */
 /*       LLUNA         */
@@ -136,7 +176,6 @@ body{
 	z-index: 0;
 	background-color: #525252;
 }
-
 
 /* ******************* */
 /*        Tigre        */
