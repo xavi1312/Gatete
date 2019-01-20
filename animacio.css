@@ -85,8 +85,6 @@ body{
 	animation: moureNuvol var(--tempsAnimacions) linear infinite;
 }
 
-
-
 .cloud {
 	border-radius: 90px / 30px;
 	width: 160px;
@@ -157,7 +155,7 @@ body{
 		transform: rotate(-50deg)
 	}
 	100%{
-		transform: rotate(320deg)
+		transform: rotate(310deg)
 	}
 }
 @keyframes colorSol{
@@ -331,6 +329,7 @@ body{
 @keyframes surtidaEstrelles{
 	0%,50%{opacity: 0;}
 	57%{opacity: 1;}
+	99%{opacity: .2;}
 }
 @keyframes billantorestrella-parelles{
 	0%,90%{box-shadow: 0 0 3px 3px rgba(255, 255, 255, .3);}
