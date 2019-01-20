@@ -1,8 +1,11 @@
 :root{
-	--midaSol: 130px;
 	--taronja: orange;
-	--groc: yellow;
+	--groc	 : yellow;
 	--vermell: lightcoral;
+	--noche  : #3E5E6B;
+	
+	--midaSol: 130px;
+
 	--tempsAnimacions: 24s;
 }
 body{
@@ -144,27 +147,44 @@ body{
 
 #moon {
 	position: relative;
-	opacity: 0;
-	top: 20px;
-	left: -100px;
+	top: 40px;
+	left: 10%;
 	z-index:1;
+	opacity: 0;
+	animation: colorLLuna var(--tempsAnimacions) infinite linear;
 }
 
 .moon {
 	width: 100px;
 	height: 100px;
+	opacity: 1;
 	border-radius: 50px;
 	background: #fff;
 	position: absolute;
 }
 
 .moon-2 {
-	background: #525252;
+	background: var(--noche);
 	position: absolute;
 	top: -20px;
 	left: 20px;
+	animation: colorCel var(--tempsAnimacions) infinite linear;
 }
 
+@keyframes colorLLuna{
+	45%{
+		opacity: 0;
+	}
+	50%{
+		opacity: .2;
+	}
+	70%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
 /* ******************* */
 /*        CEL          */
 /* ******************* */
@@ -184,8 +204,11 @@ body{
 	50%{
 		background-color: rgb(86, 132, 150);
 	}
+	70%{
+		background-color: var(--noche);
+	}
 	100%{
-		background-color: #3E5E6B;
+		background-color: #6ca6bd;
 	}
 }
 /* ******************* */
