@@ -222,6 +222,7 @@ body{
 
 .cel {
 	z-index: 0;
+
 	animation: colorCel var(--tempsAnimacions) infinite linear;
 }
 
@@ -261,4 +262,79 @@ body{
 @keyframes walk-cycle {  
   0% {background-position: 0 0; } 
   100% {background-position: 0 -2391px; } 
+}
+
+/* ******************* */
+/*      Estrelles      */
+/* ******************* */
+.estrelles{
+	animation: surtidaEstrelles var(--tempsAnimacions) infinite linear;
+}
+.estrella{
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.estrella--1{
+	top: 10%;
+	left: 50%;
+}
+.estrella--2{
+	top: 50%;
+	left: 90%;
+}
+.estrella--3{
+	top: 40%;
+	left: 20%;
+}
+.estrella--4{
+	top: 30%;
+	left: 80%;
+}
+.estrella--5{
+	top: 20%;
+	left: 90%;
+}
+.estrella--6{
+	top: 50%;
+	left: 10%;
+}
+.estrella--7{
+	top: 40%;
+	left: 37%;
+}
+.estrella--8{
+	top: 15%;
+	left: 65%;
+}
+.estrella--9{
+	top: 20%;
+	left: 10%;
+}
+.estrella--10{
+	top: 40%;
+	left: 60%;
+}
+
+.estrella:nth-child(2n){
+	animation: billantorestrella-parelles 2s infinite;
+}
+.estrella:nth-child(2n+1){
+	animation: billantorestrella-inparelles 1s infinite;
+}
+
+@keyframes surtidaEstrelles{
+	0%,50%{opacity: 0;}
+	57%{opacity: 1;}
+}
+@keyframes billantorestrella-parelles{
+	0%,90%{box-shadow: 0 0 3px 3px rgba(255, 255, 255, .3);}
+	100%{box-shadow: 0 0 3px 14px rgba(255, 255, 255, .3);}
+}
+@keyframes billantorestrella-inparelles{
+	0%,35%,50%{box-shadow: 0 0 3px 3px rgba(255, 255, 255, .3);}
+	45%{box-shadow: 0 0 3px 14px rgba(255, 255, 255, .3);}
 }
