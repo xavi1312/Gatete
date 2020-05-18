@@ -67,9 +67,8 @@ body {
 .background {
   background-image: url(imatges/background_mountain5.png),
     url(imatges/background_mountain4.png), url(imatges/background_mountain3.png);
-  /*url(imatges/background_mountain2.png);
-    url(imatges/background_mountain1.png);*/
   background-repeat: repeat-x;
+  background-size: 1800px auto;
   background-position: 0 100%;
   z-index: 2;
   animation: moureMuntanyes linear 30s infinite both;
