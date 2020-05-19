@@ -3,6 +3,7 @@
   --groc: yellow;
   --vermell: lightcoral;
   --nit: #3e5e6b;
+  --dia: rgb(93, 143, 163);
 
   --midaSol: 130px;
 
@@ -156,6 +157,10 @@ body {
   height: var(--midaSol);
   position: absolute;
   border-radius: 50%;
+  background-color: var(--taronja);
+  box-shadow: 0 0 50px rgba(255, 165, 0);
+  transition: background-color linear, box-shadow linear;
+  transition-duration: 1s;
   z-index: 1;
   animation: colorSol var(--tempsAnimacions) linear infinite;
 }
@@ -209,15 +214,13 @@ body {
   position: absolute;
   top: -20px;
   left: 20px;
+  transition: opacity 1s linear;
   animation: colorCel var(--tempsAnimacions) infinite linear;
 }
 
 @keyframes colorLLuna {
   45% {
     opacity: 0;
-  }
-  53% {
-    opacity: 0.2;
   }
   70% {
     opacity: 1;
@@ -238,7 +241,7 @@ body {
 
 @keyframes colorCel {
   0% {
-    background-color: rgb(93, 143, 163);
+    background-color: var(--dia);
   }
   25% {
     background-color: #87ceeb;
