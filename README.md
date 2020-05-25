@@ -6,10 +6,10 @@
 - CSS
 - Sprites
 
-## Para disfrutar del proyecto
+## Para ver el proyecto
 
 - Puedes ver el proyecto en vivo: https://xavi1312.github.io/Gatete/
-- Imagten del proyecto:
+- Imagen del proyecto:
   ![Gif mostrando el proyecto](https://repository-images.githubusercontent.com/165864520/94b40480-99d9-11ea-9e0e-4f76948dc2f9)
 
 ## Motivacioines y origen del proyecto
